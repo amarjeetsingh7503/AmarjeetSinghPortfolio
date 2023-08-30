@@ -155,6 +155,10 @@ a {
     justify-content: center;
 }
 
+.skill-card-body{
+    padding: 20px;
+}
+
 .projects {
     text-align: center;
     padding: 50px 50px;
