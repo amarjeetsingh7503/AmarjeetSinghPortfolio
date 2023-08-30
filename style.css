@@ -123,6 +123,10 @@ a {
     text-align: justify;
 }
 
+.about-my-image {
+    display: none;
+}
+
 .read-btn-about {
     display: flex;
     justify-content: center;
@@ -260,6 +264,15 @@ footer {
 
     .about-info{
         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-my-image {
+        display: flex;
+        width: 80%;
+        border: 5px solid #4b208c;
+        border-radius: 100%;
     }
 
     .about-info-left {
@@ -271,7 +284,7 @@ footer {
     }
 
     .read-btn-about{
-        margin-left: 30%;
+        display: none;
     }
 
     .myskills {
