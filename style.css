@@ -220,6 +220,15 @@ a {
     height: 220px;
 }
 
+.btn{
+    transition: transform 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background-color: #6b5290;
+}
+
 footer {
     padding: 10px;
     text-align: center;
