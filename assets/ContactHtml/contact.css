@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eae6f5;
+}
+
+nav {
+    background-color: #e0d4ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: #4b208c;
+}
+
+.dropdown {
+    display: none;
+}
+
+.left>a {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav-items {
+    display: flex;
+
+}
+
+.nav-items li {
+    list-style: none;
+    margin: 0px 20px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.myinfo-container {
+    background-color: #6f4aa6;
+    padding: 50px 30px;
+    padding-bottom: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 32px;
+    grid-row-gap: 22px;
+}
+
+.myinfo label {
+    color: #e0d4ff;
+}
+
+.locationframe {
+    width: 600px;
+    height: 150px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    margin: 2% 0%;
+    color: #311260;
+}
+
+.contact-heading span {
+    padding: 10px 20px;
+    box-shadow: rgba(176, 176, 255, 0.522) 0px 30px 60px -12px inset, rgba(151, 173, 255, 0.423) 0px 18px 36px -18px inset;
+    border-radius: 35px;
+}
+
+.contact-image {
+    margin: 3% 0%;
+    margin-bottom: 5px;
+    width: 250px;
+    border: 5px solid #311260;
+    border-radius: 100%;
+}
+
+#myname {
+    text-decoration: underline;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: space-around;
+    margin: 0% 20%;
+}
+
+.contact-info a {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 18%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.social-heading{
+    display: none;
+}
+
+
+button {
+    background-color: #fff;
+    border: 1px solid #a17cfd;
+    padding: 5px;
+    position: relative;
+    width: 7.8em;
+    height: 2em;
+    transition: 0.5s;
+    font-size: 17px;
+    border-radius: 0.4em;
+}
+
+button p {
+    position: absolute;
+    top: 0.4em;
+    left: 1.2em;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    color: #513891;
+}
+
+button svg {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff
+}
+
+button:hover p {
+    left: 0.6em;
+    color: #fff
+}
+
+button:hover svg {
+    opacity: 1;
+}
+
+button:hover {
+    background-color: #0077b5;
+}
+
+#whatsapp {
+    background-color: #fff;
+    border: 1px solid #a17cfd;
+}
+
+#whatsapp p {
+    color: #513891;
+    padding-left: 1px;
+}
+
+#whatsapp:hover {
+    background-color: #00b53f;
+}
+
+#whatsapp:hover p {
+    left: 0.7em;
+    color: #fff
+}
+
+#instagram {
+    background-color: #fff;
+    border: 1px solid #a17cfd;
+}
+
+#instagram p {
+    color: #513891;
+}
+
+#instagram:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+#instagram:hover p {
+    left: 0.6em;
+    color: #fff
+}
+
+#github {
+    background-color: #fff;
+    border: 1px solid #a17cfd;
+}
+
+#github p {
+    color: #513891;
+    padding-left: 1px;
+}
+
+#github:hover {
+    background-color: #000000;
+}
+
+#github:hover p {
+    left: 0.7em;
+    color: #fff
+}
+
+@media(max-width: 900px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        background-color: #e0d4ff;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+    .logo-name {
+        font-size: 18px;
+    }
+
+    .dropdown {
+        display: inline;
+        margin-top: 20px;
+    }
+
+    .dropdown button{
+        width: 80px;
+    }
+
+    .menu-main {
+        display: none;
+    }
+
+    .contact-info{
+        margin: 10%;
+    }
+
+    .contact-heading{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .contact-image{
+        margin: 10% 0%;
+    }
+
+    #myname{
+        font-size: 20px;
+    }
+
+    .contact-me{
+        flex-direction: column;
+        margin: 30px 1px;
+        justify-content: center;
+        
+    }
+
+    .contact-me p{
+        font-size: 13px;
+    }
+
+    .social-heading{
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: underline;
+        margin: 20px 5px;
+    }
+
+    .social-media{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+
+    .myinfo-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .locationframe {
+        display: none;
+    }
+
+    footer {
+        font-size: 10px
+    }
+}
+

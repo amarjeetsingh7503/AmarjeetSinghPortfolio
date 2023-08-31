@@ -338,7 +338,16 @@ footer {
         flex-direction: column;
     }
 
+    label{
+        font-size: 15px;
+    }
+
     .locationframe {
-        display: none;
+        width: 95%;
+        height: 10%;
+    }
+
+    footer{
+        font-size: 10px
     }
 }

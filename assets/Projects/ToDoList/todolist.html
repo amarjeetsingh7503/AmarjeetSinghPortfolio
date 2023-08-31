@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./todolist.css">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <a href="../../../index.html">
+                <img src="../../../img/logo.svg" width="40px" alt="logo">&nbsp;<span class="logo-name">Amarjeet
+                    Singh</span>
+            </a>
+        </div>
+        <div class="right">
+            <ul class="nav-items">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="background-color: #e0d4ff;">
+                        <span style="color: #4b208c;">Menu</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../../../index.html">Home</a></li>
+                        <li><a class="dropdown-item" href="../../About/about.html">About</a></li>
+                        <li><a class="dropdown-item" href="../../Skills/skills.html">Skills</a></li>
+                        <li><a class="dropdown-item" href="./../../Projects/project.html">Projects</a></li>
+                        <li><a class="dropdown-item" href="../../ContactHtml/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <li class="menu-main">
+                    <a href="../../../index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="menu-main">
+                    <a href="../../About/about.html">
+                        About
+                    </a>
+                </li>
+                <li class="menu-main">
+                    <a href="../../Skills/skills.html">
+                        Skills
+                    </a>
+                </li>
+                <li class="menu-main">
+                    <a href="../../Projects/project.html">
+                        Projects
+                    </a>
+                </li>
+                <li class="menu-main">
+                    <a href="../../ContactHtml/contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="newtask">
+            <p class="heading">
+                <img id="firstimg" src="./img/todoimg.png" width="70px" alt="to do list">
+                <img id="secondimg" src="./img/todoimg.png" width="70px" alt="to do list">
+                Create Your To-Do List Here!
+            </p>
+            <div id="input">
+                <input type="text" placeholder="Add Tasks Here!">
+                <button id="push">Add</button>
+            </div>
+        </div>
+        <div id="tasks">
+            <!-- For Tasks -->
+        </div>
+    </div>
+    <div class="myinfo-container">
+        <div class="my-info-left">
+            <div class="myinfo">
+                <img src="../../../img/location-white.png" alt="location"><label for="india">&nbsp;Faridabad, Haryana,
+                    India</label><br><br>
+                <img src="../../../img/telephone-white.png" alt="phone"><label for="phone">&nbsp;+91-8527105306</label><br><br>
+                <img src="../../../img/envelope-white.png" alt="mail"><label
+                    for="mail">&nbsp;amarjeetsingh75003@gmail.com</label><br><br>
+            </div>
+            <br>
+            <div class="social-media">
+                <a href="#"><img src="../../../img/linkedin.png" alt=""></a>
+                <a href="#"><img src="../../../img/github.png" width="35px" style="border-radius: 100%;" alt=""></a>
+                <a href="#"><img src="../../../img/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="../../../img/fb.png" alt="facebook"></a>
+            </div>
+        </div>
+        <div class="my-info-right">
+            <iframe class="locationframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224612.404283623!2d77.00721911682027!3d28.40208851355162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc15f5a424b1%3A0xe4f50576c850e0f2!2sFaridabad%2C%20Haryana!5e0!3m2!1sen!2sin!4v1693336133045!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+        © Copyright 2023 - 2023 Amarjeet Singh Portfolio
+    </footer>
+    <script src="todolist.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
